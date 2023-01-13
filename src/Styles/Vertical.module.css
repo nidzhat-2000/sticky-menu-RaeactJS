@@ -1,0 +1,27 @@
+.menu_vertical {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255, 0.1);
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.menu_item_vertical {
+  color: white;
+  height: var(--height);
+  font-size: 14px;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.divider_vertical {
+  height: var(--height);
+  background-color: deepskyblue;
+  position: absolute;
+  width: 3px;
+  left: 0;
+  top: var(--top);
+  border-radius: 0 3px 3px 0;
+  transition: all 0.3s;
+}

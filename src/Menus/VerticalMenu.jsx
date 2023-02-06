@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
-import styles from "../Styles/Vertical.module.css";
+import React, { useEffect, useRef, useState } from 'react';
+import styles from '../Styles/Vertical.module.css';
 
 export const VerticalMenu = () => {
-  const [position, setPosition] = useState("");
+  const [position, setPosition] = useState('');
   const ref = useRef();
 
-  const setProps = (e) => {
+  const setProps = e => {
     const top = e.target.offsetTop;
     const height = e.target.offsetHeight;
     setPosition({
@@ -14,7 +14,7 @@ export const VerticalMenu = () => {
     });
   };
 
-  const clickHandle = (e) => {
+  const clickHandle = e => {
     setProps(e);
   };
 
@@ -34,10 +34,10 @@ export const VerticalMenu = () => {
       {position && (
         <div
           style={{
-            "--left": position.left + "px",
-            "--top": position.top + "px",
-            "--width": position.width + "px",
-            "--height": position.height + "px",
+            '--left': position.left + 'px',
+            '--top': position.top + 'px',
+            '--width': position.width + 'px',
+            '--height': position.height + 'px',
           }}
           className={styles.divider_vertical}
         ></div>
@@ -54,7 +54,6 @@ export const VerticalMenu = () => {
       >
         Blog <br />
         Topics <br />
-        okay
       </button>
       <button onClick={clickHandle} className={styles.menu_item_vertical}>
         Articles
